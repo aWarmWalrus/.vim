@@ -24,3 +24,15 @@ set expandtab
 
 " Status bar
 set laststatus=2
+
+" Pathogen
+execute pathogen#infect()
+" call pathogen#helptags() " If you like to get crazy??
+
+" Color scheme
+colorscheme vorange
+
+if &term =~ '256color'
+    " disable Background Color Erase
+    set t_ut=
+endif
